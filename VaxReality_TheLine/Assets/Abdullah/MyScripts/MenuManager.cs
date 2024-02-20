@@ -10,8 +10,8 @@ public static class MenuManager
     {
         GameObject canvas = GameObject.Find("HandMenuCanvas");
         mainMenu = canvas.transform.Find("MainMenu").gameObject;
-        musicMenu = canvas.transform.Find("MusicMenu").gameObject;
-        homeMenu = canvas.transform.Find("HomeMenu").gameObject;
+        musicMenu = canvas.transform.Find("AcountMenu").gameObject;
+        homeMenu = canvas.transform.Find("WeatherMenu").gameObject;
 
         IsInitalised = true;
     }
