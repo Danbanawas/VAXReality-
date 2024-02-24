@@ -30,7 +30,11 @@ public class Train : MonoBehaviour
 
     IEnumerator TrainMove()
     {
+        yield return new WaitForSeconds(3);
+        anim.SetTrigger("close");
         yield return new WaitForSeconds(5);
         anim.SetTrigger("move");
+        yield return new WaitForSeconds(7);
+        anim.SetTrigger("open");
     }
 }
