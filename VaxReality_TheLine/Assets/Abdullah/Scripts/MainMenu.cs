@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
-   public void OnClick_Music()
+   public void OnClick_ID()
     {
-        MenuManager.OpenMenu(Menu.MUSIC, gameObject);
+        MenuManager.OpenMenu(Menu.ID, gameObject);
     }
 
-    public void OnClick_Home()
+    
+    public void OnClick_Weather()
     {
-        MenuManager.OpenMenu(Menu.HOME, gameObject);
+        MenuManager.OpenMenu(Menu.WEATHER, gameObject);
     }
+
+    public void OnClick_Account()
+    {
+        MenuManager.OpenMenu(Menu.ACCOUNT, gameObject);
+    }
+
 }
